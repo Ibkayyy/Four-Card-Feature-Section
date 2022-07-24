@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+    margin: 4em 5em 3em 5em;
+}
+
+.introduction{
+    width: 32%;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2, h3{
+    color: hsl(234, 12%, 34%);
+}
+
+
+/* Introduction */
+.introduction_h1{
+    font-weight: 200;
+    font-size: 2em;
+}
+
+.introduction_h2{
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.introduction_p{
+    font-size: 14px;
+    padding: 1em 0 4em 0;
+    line-height: 1.6;
+}
+
+
+
+/* Sections */
+.section_container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* Articles */
+article{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    padding: 2em;
+    background-color: white;
+    box-shadow: rgba(147, 178, 211, 0.2) 0px 8px 24px;
+}
+
+article > p{
+    padding: 0.6em 0 1.3em 0;
+}
+
+article > img{
+    align-self: end;
+}
+
+.article1{
+    width: 23%;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    align-self: center;
+}
+
+
+/* middle container */
+.container_middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 0 -3em;
+}
+
+.article2{
+    width: 70%;
+    margin: auto;
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.article3{
+    width: 70%;
+    margin: auto;
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.article4{
+    width: 23%;
+    border-top: 5px solid hsl(212, 86%, 64%);
+    align-self: center;
+
+}
+
+/* Credits */
+.credits{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5em 1em 0 1em;
+}
+ 
+.credits a{
+    text-decoration: none;
+}
+
+
+@media (max-width: 1294px) {
+    .introduction{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1194px) {
+    body{
+        margin: 4em 1.5em 3em 1.5em;
+    }
+
+    .section_container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .article1{
+        width: 85%;
+        margin-bottom: 3em;
+    }
+
+    .container_middle{
+        width: 100%;
+        margin: 0 0 3em 0;
+        gap: 3em;
+    }
+
+    .article2, .article3{
+        width: 85%;
+    }
+
+    .article4{
+        width: 85%;
+    }
+}
